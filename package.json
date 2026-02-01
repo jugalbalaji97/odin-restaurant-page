@@ -9,7 +9,7 @@
     "get-main-changes": "git checkout gh-pages && git merge main --no-edit",
     "commit-deployment-changes": "git add dist -f && git commit -m 'Deployment commit'",
     "push-deployment-changes": "git subtree push --prefix dist origin gh-pages",
-    "deploy": "npm run -s get-main-changes; npm run -s commit-deployment-changes; npm run -s build; npm run -s push-deployment-changes ; git checkout main"
+    "deploy": "npm run -s get-main-changes; npm run -s build; npm run -s commit-deployment-changes; npm run -s push-deployment-changes ; git checkout main"
   },
   "repository": {
     "type": "git",
