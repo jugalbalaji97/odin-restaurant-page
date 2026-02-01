@@ -2,7 +2,6 @@ import path from "node:path"
 import HtmlWebpackPlugin from "html-webpack-plugin"
 
 export default {
-    mode: "development",
     entry: "./src/index.js",
     output: {
         filename: "main.js",
@@ -14,10 +13,6 @@ export default {
             template: "./src/template.html"
         })
     ],
-    devtool: "eval-source-map",
-    devServer: {
-        watchFiles: ["./src/template.html"],
-    },
     module: {
         rules: [
             {
@@ -30,4 +25,4 @@ export default {
             }
         ]
     }
-}
+};
