@@ -1,7 +1,12 @@
+import restaurantPhoto from "./assets/ramen_shop.png"
+import "./home.css";
+
 export default function(container) {
 
     const restaurantTitle = document.createElement("h1");
     const restaurantTagLine = document.createElement("div");
+    restaurantTagLine.classList.add("tagline");
+    const restaurantPhotoImg = document.createElement("img");
     const restaurantDescription = document.createElement("div");
     const restaurantDescriptionPara1 = document.createElement("p");
     const restaurantDescriptionPara2 = document.createElement("p");
@@ -16,6 +21,7 @@ export default function(container) {
     const timingsSunday = document.createElement("p");
     
     restaurantTitle.textContent = "Sakura Ramen Shop";
+    restaurantPhotoImg.src = restaurantPhoto;
     restaurantTagLine.textContent = "Authentic Japanese Ramen in the Heart of the City";
     restaurantDescriptionPara1.textContent = "Welcome to Sakura Ramen Shop, your cozy corner for rich, comforting bowls of traditional Japanese ramen. Inspired by the small street-side ramen bars of Tokyo, we serve slow-simmered broths, freshly made noodles, and perfectly balanced toppings that warm the soul with every bite.";
     restaurantDescriptionPara2.textContent = "Whether you’re stopping by for a quick lunch, a relaxed dinner, or a late evening craving, Sakura Ramen Shop offers an inviting atmosphere, friendly service, and unforgettable flavors.";
@@ -39,8 +45,8 @@ export default function(container) {
     timingsSection.appendChild(timingsSunday);
 
     container.appendChild(restaurantTitle);
-
     container.appendChild(restaurantTagLine);
+    container.appendChild(restaurantPhotoImg);
     container.appendChild(restaurantDescription);
     container.appendChild(addressSection);
     container.appendChild(timingsSection);

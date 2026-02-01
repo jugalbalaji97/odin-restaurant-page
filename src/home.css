@@ -1,0 +1,12 @@
+img {
+    width: min(500px, 70vw);
+    border-radius: 10px;
+}
+
+.tagline {
+    padding: 20px 0;
+    color: var(--brown);
+    font-size: 22px;
+    font-weight: 600;
+}
+

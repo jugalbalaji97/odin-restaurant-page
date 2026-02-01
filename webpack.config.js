@@ -26,7 +26,7 @@ export default {
             },
             {
                 test: /\.(png|jpg|jpeg|webp)$/i,
-                use: "asset/resource",
+                type: "asset/resource",
             }
         ]
     }
